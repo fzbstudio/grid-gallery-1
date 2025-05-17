@@ -1,0 +1,243 @@
+/* style.css */
+/* opció sense breakpoints */
+
+body {
+  margin: 0;
+}
+
+.EXTERN {
+  width: 100vw;
+  height: auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  gap: 0;
+}
+
+.INTERN {
+  display: flex;
+  height: auto;
+  position: relative;
+  /* Important per a posicionar l'overlay absolutament */
+  overflow: hidden;
+  /* Important: oculta el contingut que sobrepassa */
+}
+
+
+.INTERN img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 1.0s ease;
+  /* Transició suau per a la imatge */
+  /* transition-delay: 0.5s; No funciona Afegeix un retard de 0.5 segons */
+}
+
+.INTERN .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* background-color: hsla(0, 50%, 50%, 0.8); */
+  /* Fons  semitransparent */
+  color: grey;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: 1.2em;
+  opacity: 0;
+  /* Inicialment ocult */
+  transition: opacity 0.3s ease 0.3s;
+  /* Transició suau per a l'overlay amb durada i retard */
+}
+
+.INTERN:hover img {
+  opacity: 0;
+  /* Amaga la imatge en passar el cursor */
+}
+
+.INTERN:hover .overlay {
+  opacity: 1;
+  /* Mostra l'overlay en passar el cursor */
+}
+
+#imatge-01 {
+  background-color: hsl(0, 35%, 80%);
+  /* Alice Blue */
+}
+
+#imatge-02 {
+  background-color: hsl(10, 35%, 80%);
+  /* Antique White */
+}
+
+#imatge-03 {
+  background-color: hsl(20, 35%, 80%);
+  /* Pale Turquoise */
+}
+
+#imatge-04 {
+  background-color: hsl(40, 35%, 80%);
+  /* Light Cyan */
+}
+
+#imatge-05 {
+  background-color: hsl(50, 35%, 80%);
+  /* Beige */
+}
+
+#imatge-06 {
+  background-color: hsl(60, 35%, 80%);
+  /* Ghost White */
+}
+
+#imatge-07 {
+  background-color: hsl(70, 35%, 80%);
+  /* Honeydew */
+}
+
+#imatge-08 {
+  background-color: hsl(80, 35%, 80%);
+  /* Mint Cream */
+}
+
+#imatge-09 {
+  background-color: hsl(90, 35%, 80%);
+  /* Lavender Blush */
+}
+
+#imatge-10 {
+  background-color: hsl(100, 35%, 80%);
+  /* Misty Rose */
+}
+
+#imatge-11 {
+  background-color: hsl(110, 35%, 80%);
+  /* Lemon Chiffon */
+}
+
+#imatge-12 {
+  background-color: hsl(120, 35%, 80%);
+  /* Khaki */
+}
+
+#imatge-13 {
+  background-color: hsl(130, 35%, 80%);
+  /* Dark Khaki */
+}
+
+#imatge-14 {
+  background-color: hsl(140, 35%, 80%);
+  /* Pale Green */
+}
+
+#imatge-15 {
+  background-color: hsl(150, 35%, 80%);
+  /* Wheat */
+}
+
+#imatge-16 {
+  background-color: hsl(160, 35%, 80%);
+  /* Tan */
+}
+
+#imatge-17 {
+  background-color: hsl(170, 35%, 80%);
+  /* Burly Wood */
+}
+
+#imatge-18 {
+  background-color: hsl(180, 35%, 80%);
+  /* Moccasin */
+}
+
+#imatge-19 {
+  background-color: hsl(190, 35%, 80%);
+  /* Peach Puff */
+}
+
+#imatge-20 {
+  background-color: hsl(200, 35%, 80%);
+  /* Bisque */
+}
+
+#imatge-21 {
+  background-color: hsl(210, 35%, 80%);
+  /* Navajo White */
+}
+
+#imatge-22 {
+  background-color: hsl(220, 35%, 80%);
+  /* Cornsilk */
+}
+
+#imatge-23 {
+  background-color: hsl(230, 35%, 80%);
+  /* Floral White */
+}
+
+#imatge-24 {
+  background-color: hsl(240, 35%, 80%);
+  /* Old Lace */
+}
+
+#imatge-25 {
+  background-color: hsl(250, 35%, 80%);
+  /* Papaya Whip */
+}
+
+#imatge-26 {
+  background-color: hsl(260, 35%, 80%);
+  /* Seashell */
+}
+
+#imatge-27 {
+  background-color: hsl(270, 35%, 80%);
+  /* White Smoke */
+}
+
+#imatge-28 {
+  background-color: hsl(280, 35%, 80%);
+  /* Gainsboro */
+}
+
+#imatge-29 {
+  background-color: hsl(290, 35%, 80%);
+  /* Dark Sea Green */
+}
+
+#imatge-30 {
+  background-color: hsl(300, 35%, 80%);
+  /* Dark Goldenrod */
+}
+
+#imatge-31 {
+  background-color: hsl(310, 35%, 80%);
+  /* Rosy Brown */
+}
+
+#imatge-32 {
+  background-color: hsl(320, 35%, 80%);
+  /* Peru */
+}
+
+#imatge-33 {
+  background-color: hsl(330, 35%, 80%);
+  /* Pale Violet Red */
+}
+
+#imatge-34 {
+  background-color: hsl(340, 35%, 80%);
+  /* Plum */
+}
+
+#imatge-35 {
+  background-color: hsl(350, 35%, 80%);
+  /* Violet */
+}
+
+#imatge-36 {
+  background-color: hsl(360, 35%, 80%);
+  /* Light Blue */
+}
