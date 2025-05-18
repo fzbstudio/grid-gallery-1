@@ -3,6 +3,14 @@
 
 body {
   margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+* {
+  font-family: "Archivo", helvetica, sans-serif;
+  font-weight: 200;
+  letter-spacing: 0.07rem;
 }
 
 .EXTERN {
@@ -22,12 +30,11 @@ body {
   /* Important: oculta el contingut que sobrepassa */
 }
 
-
 .INTERN img {
   display: block;
   width: 100%;
   height: auto;
-  transition: opacity 1.0s ease;
+  transition: opacity 1s ease;
   /* Transició suau per a la imatge */
   /* transition-delay: 0.5s; No funciona Afegeix un retard de 0.5 segons */
 }
